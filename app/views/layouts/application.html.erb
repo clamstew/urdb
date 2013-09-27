@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Urdb</title>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/foundation/4.3.2/css/foundation.min.css">
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -9,7 +10,11 @@
 <body>
 
 <%= render 'partials/header' %>
-<%= yield %>
+<div class="row">
+	<div class="large-12 column">
+		<%= yield %>
+	</div>
+</div>
 <%= render 'partials/footer' %>
 
 </body>

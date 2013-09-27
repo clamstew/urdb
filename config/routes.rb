@@ -3,7 +3,7 @@ Urdb::Application.routes.draw do
   root "movies#index"
 
   get "/movies" => "movies#index", as: 'movies'
-  get "/movies/:movie_title" => "movies#index", as: 'movie'
+  get "/movies/:id" => "movies#show", as: 'movie'
 
 
 end

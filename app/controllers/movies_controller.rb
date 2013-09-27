@@ -4,6 +4,6 @@ class MoviesController < ApplicationController
   end
 
   def show
-    @movie = Movie.find_by_title(params[:movie_title])
+    @movie = Movie.find(params[:id])
   end
 end

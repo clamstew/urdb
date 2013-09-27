@@ -1,1 +1,6 @@
-movie show all
+<ul>
+<% @movies.each do |movie| %>
+	<li><%= "#{movie.title} - #{movie.year}" %> <%= link_to "movie details", movie_path(movie.id) %></li>
+
+<% end %>
+</ul>
