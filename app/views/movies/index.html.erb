@@ -1,6 +1,14 @@
-<ul>
+<!-- <ul class="movie-list"> -->
 <% @movies.each do |movie| %>
-	<li><%= "#{movie.title} - #{movie.year}" %> <%= link_to "movie details", movie_path(movie.id) %></li>
-
+	<div class="row movie-list">
+		<div class="large-12 column">
+			<div class="large-4 column">
+				<%= image_tag movie.gif %>
+			</div>
+			<div class="large-8 column">
+				<%= "#{movie.title} - #{movie.year}" %> <%= link_to "movie details", movie_path(movie.id) %>
+			</div>
+		</div>
+	</div>
 <% end %>
-</ul>
+<!-- </ul> -->
