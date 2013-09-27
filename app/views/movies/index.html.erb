@@ -5,7 +5,9 @@
 				<%= image_tag movie.gif %>
 			</div>
 			<div class="large-8 column">
-				<%= "#{movie.title} - #{movie.year}" %> <%= link_to "movie details", movie_path(movie.id) %>
+				<h3><%= "#{movie.title} - #{movie.year}" %></h3>
+				<p><%= "#{movie.description}" %></p>
+				<p><%= link_to "See Trailer", movie_path(movie.id) %></p>
 			</div>
 		</div>
 	</div>
