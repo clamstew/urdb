@@ -1,0 +1,41 @@
+.full-width.row {
+	width: 100%;
+	//background: #000000;
+	//color: #ffffff;
+}
+
+.black-bkgd {
+	background: #000000;
+	color: #ffffff;
+}
+
+.row.main-body {
+	margin-top: 20px;	
+}
+
+// =========== SITE HEADER =================
+
+#site-title a {
+  float: left;
+  margin: 0 10px 10px 0;
+  font-size: 1.7em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+  line-height: 1;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+//================ HOMEPAGE =================
+
+ul.movie-list {
+	list-style: none;
+	li {
+		border-bottom: 1px solid #cccccc;
+	}
+	
+}
