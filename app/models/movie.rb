@@ -8,4 +8,6 @@ class Movie < ActiveRecord::Base
     "//media.giphy.com/media/#{self.gif_link}/giphy.gif"
   end
 
+  # can grab description with http://mymovieapi.com/?q=godfather
+
 end
