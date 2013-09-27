@@ -32,10 +32,15 @@
 
 //================ HOMEPAGE =================
 
-ul.movie-list {
-	list-style: none;
-	li {
-		border-bottom: 1px solid #cccccc;
-	}
+.row.movie-list {
+	margin: 10px 0 10px 0;
+	border-bottom: 1px solid #cccccc;
+	clear:both;
+}
 	
+
+
+//============== show vide page ==============
+.row.show-video-head {
+	margin: 0 0 20px 0;
 }

@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row show-video-head">
 	<div class="large-4 columns">
 		<%= image_tag @movie.gif %>
 	</div>
@@ -7,8 +7,8 @@
 		<p><%= @movie.description %></p>
 	</div>
 </div>
-
-<iframe width="900" height="675" src=<%=@movie.youtube%> frameborder="0" allowfullscreen></iframe>
-
-<br />
-
+<div class="row">
+	<div class="large-12 columns">
+		<iframe width="900" height="675" src=<%=@movie.youtube%> frameborder="0" allowfullscreen></iframe>
+	</div>
+</div>
